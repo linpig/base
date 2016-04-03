@@ -1,0 +1,66 @@
+/*返回頂部*/
+
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: 1;
+}
+
+.cd-top {
+    display: block;
+   
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+
+    z-index: 999;
+}
+
+
+/*三角形*/
+
+// .triangle {
+//     width: 0;
+//     height: 0;
+//     border-style: solid;
+//     border-width: 0 15px 26.0px 15px;
+//     border-color: transparent transparent #fff transparent;
+//     margin: 15px;
+// }
+
+
+.top_gogo{
+  max-width: 40px;
+   display: none;
+ 
+    margin: 10px 14px;color:#fff;
+    -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.img_mobile{
+  display: none;
+}
+
+/*返回頂部 end*/
